@@ -1,0 +1,16 @@
+# 忽略所有目录(前/代表当前目录, 后/代表忽略内容为目录)
+/*/
+
+# 保留目录
+!/.vscode/
+!/docs/
+!/scripts/
+!/simulation/
+!/user/
+
+# 保留目录下文件
+!/.vscode/**
+!/docs/**
+!/scripts/**
+!/simulation/**
+!/user/**
