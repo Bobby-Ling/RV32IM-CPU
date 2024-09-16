@@ -1,30 +1,33 @@
 `timescale 1ns / 1ps
 
-module PipelineInterfaceTemplate(
-    input clk;
-    input async_rst;
-    input sync_rst;
-    input en;
-    input [31:0] PC_in;
-    input [31:0] IR_in;
-    output [31:0] PC_out;
-    output [31:0] IR_out;
+// used for generating pipeline interface modules
+// do not edit
+module PipelineInterface//placeholder{0}
+#(
+    parameter DEBUG=0
+)
+(
+    input  clk;
+    input  async_rst;
+    input  sync_rst;
+    input  en;
+    // input      [31:0] signal_i;
+    // output reg [31:0] signal_o;
+//placeholder{1}
 );
-    parameter DEBUG=0;
-    
     always @(posedge clk or negedge async_rst) begin;
         if (!async_rst) begin
             // do async reset
-            PC_out <= 0;
-            IR_out <= 0;
+            // signal_o <= 0;
+//placeholder{2}
         end else if (sync_rst) begin
             // do sync reset 
-            PC_out <= 0;
-            IR_out <= 0;
+            // signal_o <= 0;
+//placeholder{2}
         end else if(en) begin
             // propagate to next pipeline stage
-            PC_out <= PC_in;
-            IR_out <= PC_in;
+            // signal_o <= signal_i;
+//placeholder{3}
         end
     end
 endmodule

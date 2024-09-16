@@ -2,8 +2,8 @@
     "toolChain": "xilinx", 
 
     "prjName": {
-        "PL": "template",
-        "PS": "template"
+        "PL": "RV32IM",
+        "PS": "RV32IM"
     },
 
     "arch" : {
