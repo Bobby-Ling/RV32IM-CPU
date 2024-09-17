@@ -1,3 +1,6 @@
 [submodule "FPGA/scripts/Pipelined-CPU-Generator"]
 	path = FPGA/scripts/Pipelined-CPU-Generator
 	url = git@github.com:Bobby-Ling/Pipelined-CPU-Generator.git
+[submodule "FPGA/scripts/Controller-Generator"]
+	path = FPGA/scripts/Controller-Generator
+	url = git@github.com:Bobby-Ling/Controller-Generator.git
