@@ -22,6 +22,8 @@ module RiscV32CoreDemo(
     
     `include "include/generated/Controller_Inst.vh"
 
+    wire ID_R1_read_w;
+    wire ID_R2_read_w;
     ///////////////////////////////////////////
     ///////   PipelineInterface ID/EX  ////////
     assign ID_EX_en = 1;
